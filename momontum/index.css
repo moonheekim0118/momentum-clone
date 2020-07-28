@@ -1,0 +1,10 @@
+
+.nameForm,
+.greeting,
+.name_modify {
+    display: none;
+}
+
+.showing{
+    display: block;
+}

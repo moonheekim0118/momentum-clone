@@ -1,0 +1,101 @@
+@keyframes example {
+    from {background-color: #ff6161;}
+    to {background-color: #ffff66;}
+  }
+
+html{
+    height:100%;
+    background-color: #ff6161;
+    font-family: sans-serif;
+    color:#0f222d;
+    background-size: auto;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+.main{
+    width:400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+    color:#fff;
+}
+
+form{
+    background-color: #fff;
+    padding: 15px;
+}
+
+input[type="text"]{
+    width: 310px;
+    height: 30px;
+    outline: 0;
+    border: none;
+    font-size:1.5rem;
+    background-color: #fff;
+    columns: #2f4f4f;
+}
+
+button{
+    font-size: 1.5rem;
+    color: #53BDFF;
+    background-color: #fff;
+    outline: 0;
+    border: none;
+    width: 30px;
+}
+
+.tasksBoard{
+    background-color: #fff;
+    margin-top: 20px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding-right: 40px;
+    display: none;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    border-bottom: 1px solid #53BDFF;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-size:1.3rem;
+    columns: #2f4f4f;
+}
+
+.delete{
+    background-color: #ff6161;
+    padding:0px 3px 0px 3px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#clear{
+    color:#ff6161;
+    position: relative;
+    left:350px;
+    cursor: pointer;
+}
+
+@media(max-width: 500px){
+    .main{
+        margin:auto;
+        width:100%
+    }
+    input[type="text"]{
+        width:80%;
+    }
+    button{
+        width: 10%;
+    }
+}
