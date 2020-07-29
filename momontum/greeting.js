@@ -21,8 +21,8 @@ function setGreetingMessage(){
 }
 
 function modifyName(){
-    greeting.classList.remove('showing');
     nameModify.classList.remove('showing');
+    greeting.classList.remove('showing');
     askForName();    
 }
 function saveName(name){
@@ -31,6 +31,7 @@ function saveName(name){
 function handleSubmit(){
     event.preventDefault(); //버블 방지 
     const currentValue= input.value; // value추출
+    input.value="";
     saveName(currentValue); // local storage에 이름 저장 
     form.classList.remove('showing');
     paintGreeting(currentValue);
